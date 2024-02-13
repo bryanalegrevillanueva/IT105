@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+
+    <h2>Contact Us</h2>
+    
+    <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+
+    <script>
+        function submitForm() {
+            // Get form data
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+
+            // Create XML representation of form data
+            var xmlData = '<contactForm>';
+            xmlData += '<name>' + name + '</name>';
+            xmlData += '<email>' + email + '</email>';
+            xmlData += '<message>' + message + '</message>';
+            xmlData += '</contactForm>';
+
+            // For demonstration purposes, you can log or alert the XML data
+            console.log(xmlData);
+            // Alternatively, you can send this data to a server using AJAX or another method
+
+            // Reset the form
+            document.getElementById('contactForm').reset();
+        }
+    </script>
+
+</body>
+</html>

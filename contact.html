@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Contact</title>
+</head>
+
+<style>
+    .body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url(bg.jpg);
+  
+    }
+    .forms{
+        border: 2px solid black;
+        background-image: url(bg.jpg);
+        width: 381px;
+        height: 338px;
+        margin-left: 587px;
+        margin-top: 137px;
+        color: antiquewhite;
+    }
+
+    .form-group {
+        width: 307px;
+        margin-left: 38px;
+    }
+
+    .btn{
+        margin-left: 100px;
+    }
+
+    .icon{
+        margin-left: 100px;
+    }
+
+</style>
+<body>
+    <!--nav-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">BRYAN A. VILLANUEVA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 active" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">Contact</a>
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- Contact-->
+<div class="forms">
+<form method="POST">
+    <h1 style="margin-left: 120px;">Contact</h1>
+    <div class="form-group">
+     <label for="Name">Name</label>
+     <input type="name" class="form-control" id="name" name="fullname" required>
+    </div>
+
+    <div class="form-group">
+     <label for="email">Email</label>
+     <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+     <label for="Pnum">Phone number</label>
+     <input type="Pnum" class="form-control" id="Pnum" name="number" required>
+    </div>
+
+    <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+          </svg>
+    </div>
+    <div class="btn">
+    <button type="submit" class="btn btn-primary btn-block" style="margin-left:10px; ">Send Message</button>
+</div>
+</form>
+</div>
+    <script src="js/bootstrap.min.js" ></script>
+</body>
+</html>
